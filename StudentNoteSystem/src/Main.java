@@ -5,8 +5,10 @@ public class Main {
         Teacher t2=new Teacher("Albert Einstein","FİZİK","555");
         Teacher t3=new Teacher("Heisenberg","KİMYA","555");
 
-        Course mat= new Course("MATEMATİK","MAT101","MAT", t1);
-        Course fizik=new Course("FİZİK","FZK101","FZK",t2);
-        Course kimya=new Course("KİMYA","KMY101","KMY",t3);
+        Course mat= new Course("MATEMATİK","MAT101","MAT");
+        Course fizik=new Course("FİZİK","FZK101","FZK");
+        Course kimya=new Course("KİMYA","KMY101","KMY");
+
+        mat.addTeacher(t2);
     }
 }
