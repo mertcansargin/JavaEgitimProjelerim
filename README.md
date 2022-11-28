@@ -1,1 +1,1 @@
-# JavaEgitimProjelerim
+# JavaEduProject
