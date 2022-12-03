@@ -35,6 +35,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner rea=new Scanner(System.in);
         int secim,ustsecim;
+
         String menu="MENU \n 1 --> Toplama \n" +
                 "2 --> Cıkarma \n " +
                 "3 --> Carpma \n " +
@@ -43,21 +44,21 @@ public class Main {
                 "6 --> Mod Alma \n" +
                 "7 --> Dikdortgen Alan ve Cevre Hesaplama\n" +
                 "0 -->Cıkıs Yap";
-
+        System.out.println("1 --> Menu\n" +
+                "2 --> Programı Kapat");
+        ustsecim = rea.nextInt();
 
         do {
-            System.out.println("1 --> Menu\n" +
-                    "2 --> Programı Kapat");
-            ustsecim = rea.nextInt();
             if (ustsecim == 1) {
+                System.out.println("İlk Sayi: ");
+                int say1 = rea.nextInt();
+                System.out.println("İkinci Sayi: ");
+                int say2 = rea.nextInt();
                 do {
                     System.out.println("\n" + menu);
                     secim = rea.nextInt();
                     if (secim >= 0 && secim <= 7) {
-                        System.out.println("İlk Sayi: ");
-                        int say1 = rea.nextInt();
-                        System.out.println("İkinci Sayi: ");
-                        int say2 = rea.nextInt();
+
                         switch (secim) {
                             case 1:
                                 Toplam(say1, say2);
@@ -85,17 +86,18 @@ public class Main {
                                 break;
 
                         }
+                        break;
                     } else {
                         System.out.println("HATALI TUŞLAMA YAPTINIZ LUTFEN TEKRAR DENE");
                     }
 
-                }  while (secim != 0);
+                }  while (secim == 0);
                 System.out.println("Cıkış Yapıldı.");
             }
 
 
-    } while(ustsecim == 2);
+    } while(ustsecim != 2);
         {
-            System.out.println("üst menü denemeee");
+            System.out.println("PROGRAM KAPATILDI...");
         }
 }}
