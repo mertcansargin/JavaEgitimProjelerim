@@ -1,15 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        int[] dizi= {10,28,83,44,53,60};
-        int top = 0,ort,sayac=0;
+        int[] dizi= {1,2,3,4,5,6};
+        double top = 0,ort;
 
         for(int i = 0; i< dizi.length; i++){
-            top+=dizi[i];
-            sayac++;
+            top+=(1/dizi[i]);
         }
         System.out.println("Toplam: "+top);
-        System.out.println("Sayac: "+sayac);
-        ort=top/sayac;
+        ort=dizi.length/top;
         System.out.println("Ortalama: "+ort);
     }
 }
