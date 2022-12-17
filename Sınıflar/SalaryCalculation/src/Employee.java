@@ -1,11 +1,11 @@
 public class Employee {
     String nameSur;
-    int salary,workHours,hireYear;
+    int salary,workHours,hireYear,raise;
 
     //ödevde kullanılanlar hariç kendimce ihtiyacım olduğunu düşündüğüm değişkenler
     int bonus=30;
     int nowYear=2021;
-    int workYear,raise,salarytax,workbonus,topprice;
+    int workYear,salarytax,workbonus,topprice;
 
     public Employee(String nameSur,int salary,int workHours,int hireYear){
         this.nameSur=nameSur;
@@ -53,16 +53,10 @@ public class Employee {
         topprice=salary+bonus-salarytax;
         System.out.println("Toplam maas: "+topprice);
     }
-
-    @Override
-    public String toString() {
-        return
-                "Calisan Ad Soyad    = " + nameSur +
-                        "\nSalary              = " + salary +
-                        "\nWorkHours           = " + workHours +
-                        "\nHireYear            = " + hireYear ;
-                  /*      "\nTax                 = " + tax() +
-                        "\nBonus               = " + bonus() +
-                        "\nRaiseSalary         = " + raiseSalary() ; */
+     void info(){
+        System.out.println("Çalışanın adı: "+nameSur);
+        System.out.println("Çalışanın Maaşı: "+salary);
+        System.out.println("Çalıştığı saat: "+workHours);
+        System.out.println("İşe giriş tarihi: "+hireYear);
     }
 }
