@@ -1,1 +1,1 @@
-# JavaEduProject
+Projeler konularına göre başarıyla klasörlenmiştir.
