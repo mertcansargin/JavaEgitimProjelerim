@@ -21,6 +21,6 @@ public class Main {
         if (s1 < s2) System.out.println("Siralama: " + s3 + ", " + s1 + ", " + s2);
         else System.out.println("Siralama: " + s3 + ", " + s3 + ", " + s2);
     }
-    
+
     }
 }
